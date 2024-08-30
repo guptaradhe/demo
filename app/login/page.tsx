@@ -23,13 +23,10 @@ export default function Login() {
 
   const handleSubmit = async(e) => {
     e.preventDefault();
-    // Add validation and form submission logic here
     const body = {
       email: form.email,
       password: form.password,
     };
- 
-   
     const response = await axios.post(
       "/api/user-login",
       body
@@ -49,8 +46,7 @@ export default function Login() {
       })
 
       
-    } else if(response.data.status==401){
-      
+    } else if(response.data.status==401){     
       swal({
         title: "Failed",
         text: response.data.message,

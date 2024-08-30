@@ -9,8 +9,8 @@ export default function UserDetails() {
   useEffect(() => {
     async function fetchUserData() {
       try {
-        // Simulate fetching user data
-        const response = await fetch('/api/get-user-details'); // Replace with your API endpoint
+    
+        const response = await fetch('/api/get-user-details'); 
         const data = await response.json();
         console.log(data.data);
         
@@ -40,8 +40,6 @@ export default function UserDetails() {
           </div>
         ))}
       </div>
-
-     
     </div>
   );
 }
