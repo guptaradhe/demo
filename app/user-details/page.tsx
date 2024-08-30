@@ -1,38 +1,7 @@
 "use client"
 
 import { useState, useEffect } from 'react';
-
-// // Mock user data
-// const mockUserData = [
-//   {
-//     name: 'John Doe',
-//     email: 'john.doe@example.com',
-//     address: '123 Main St, Anytown, USA',
-//     dob: '1990-01-01',
-//     mobile: '123-456-7890',
-//   },
-//   {
-//     name: 'Jane Smith',
-//     email: 'jane.smith@example.com',
-//     address: '456 Elm St, Anytown, USA',
-//     dob: '1985-05-15',
-//     mobile: '987-654-3210',
-//   },
-//   {
-//     name: 'John Doe',
-//     email: 'john.doe@example.com',
-//     address: '123 Main St, Anytown, USA',
-//     dob: '1990-01-01',
-//     mobile: '123-456-7890',
-//   },
-//   {
-//     name: 'Jane Smith',
-//     email: 'jane.smith@example.com',
-//     address: '456 Elm St, Anytown, USA',
-//     dob: '1985-05-15',
-//     mobile: '987-654-3210',
-//   }
-// ];
+import './user-details.css'
 
 export default function UserDetails() {
   const [users, setUsers] = useState([]);
@@ -72,39 +41,7 @@ export default function UserDetails() {
         ))}
       </div>
 
-      <style jsx>{`
-        .container {
-          max-width: 800px;
-          margin: 0 auto;
-          padding: 1rem;
-        }
-        .card-container {
-          display: flex;
-          flex-wrap: wrap;
-          gap: 1rem;
-        }
-        .card {
-          background: #fff;
-          border-radius: 8px;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-          padding: 1rem;
-          flex: 1 1 calc(50% - 1rem);
-          box-sizing: border-box;
-        }
-        h1 {
-          text-align: center;
-          margin-bottom: 1rem;
-        }
-        h2 {
-          margin-top: 0;
-        }
-        p {
-          margin: 0.5rem 0;
-        }
-        strong {
-          font-weight: bold;
-        }
-      `}</style>
+     
     </div>
   );
 }

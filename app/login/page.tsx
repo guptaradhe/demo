@@ -4,6 +4,7 @@ import { useState } from 'react';
 import axios from "axios";
 import swal from "sweetalert";
 import { useRouter } from "next/navigation";
+import './login.css'
 export default function Login() {
   const [form, setForm] = useState({
     email: '',
@@ -111,39 +112,7 @@ export default function Login() {
         </div>
       </form>
 
-      <style jsx>{`
-        .container {
-          max-width: 400px;
-          margin: 0 auto;
-          padding: 1rem;
-        }
-        form div {
-          margin-bottom: 1rem;
-        }
-        label {
-          display: block;
-          margin-bottom: 0.5rem;
-        }
-        input {
-          width: 100%;
-          padding: 0.5rem;
-          box-sizing: border-box;
-        }
-        button {
-          padding: 0.5rem 1rem;
-          background-color: #0070f3;
-          color: white;
-          border: none;
-          cursor: pointer;
-        }
-        button:hover {
-          background-color: #005bb5;
-        }
-          .login-sec{
-           display:flex;
-           justify-content:space-between;
-          }
-      `}</style>
+      
     </div>
   );
 }

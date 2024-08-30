@@ -4,6 +4,7 @@ import { useState } from 'react';
 import axios from "axios";
 import swal from "sweetalert";
 import { useRouter } from "next/navigation";
+import './sign-up.css'
 export default function Signup() {
   const [form, setForm] = useState({
     name: '',
@@ -162,35 +163,7 @@ export default function Signup() {
         <button type="submit">Sign Up</button>
       </form>
 
-      <style jsx>{`
-        .container {
-          max-width: 600px;
-          margin: 0 auto;
-          padding: 1rem;
-        }
-        form div {
-          margin-bottom: 1rem;
-        }
-        label {
-          display: block;
-          margin-bottom: 0.5rem;
-        }
-        input {
-          width: 100%;
-          padding: 0.5rem;
-          box-sizing: border-box;
-        }
-        button {
-          padding: 0.5rem 1rem;
-          background-color: #0070f3;
-          color: white;
-          border: none;
-          cursor: pointer;
-        }
-        button:hover {
-          background-color: #005bb5;
-        }
-      `}</style>
+     
     </div>
   );
 }
